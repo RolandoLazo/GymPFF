@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymPFF.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20211215220948_version_5")]
-    partial class version_5
+    [Migration("20211215225053_version_1")]
+    partial class version_1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

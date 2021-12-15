@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GymPFF.Migrations
 {
-    public partial class version_5 : Migration
+    public partial class version_1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

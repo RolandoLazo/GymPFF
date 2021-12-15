@@ -14,29 +14,29 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ActividadId" />
             <div class="form-group">
-                <label asp-for="NombreActividad" class="control-label"></label>
+                Nombre de la Actividad
                 <input asp-for="NombreActividad" class="form-control" />
                 <span asp-validation-for="NombreActividad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Descripcion" class="control-label"></label>
+                Descripción
                 <input asp-for="Descripcion" class="form-control" />
                 <span asp-validation-for="Descripcion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="TarifaId" class="control-label"></label>
+                Tarifa
                 <select asp-for="TarifaId" class="form-control" asp-items="ViewBag.TarifaId"></select>
                 <span asp-validation-for="TarifaId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar</a>
 </div>
 
 @section Scripts {
