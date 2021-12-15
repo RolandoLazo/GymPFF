@@ -1,0 +1,39 @@
+﻿@model GymPFF.Models.RayosUV
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>RayosUV</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RayosUVId" />
+            <div class="form-group">
+                <label asp-for="NumCuarto" class="control-label"></label>
+                <input asp-for="NumCuarto" class="form-control" />
+                <span asp-validation-for="NumCuarto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoraUso" class="control-label"></label>
+                <input asp-for="HoraUso" class="form-control" />
+                <span asp-validation-for="HoraUso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
