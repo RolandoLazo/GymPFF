@@ -14,37 +14,37 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ClaseId" />
             <div class="form-group">
-                <label asp-for="DiaEstablecido" class="control-label"></label>
+                Dia Establecido
                 <input asp-for="DiaEstablecido" class="form-control" />
                 <span asp-validation-for="DiaEstablecido" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HInicio" class="control-label"></label>
+                Hora de Inicio
                 <input asp-for="HInicio" class="form-control" />
                 <span asp-validation-for="HInicio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SalaId" class="control-label"></label>
+                Sala
                 <select asp-for="SalaId" class="form-control" asp-items="ViewBag.SalaId"></select>
                 <span asp-validation-for="SalaId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ActividadId" class="control-label"></label>
+                Actividad
                 <select asp-for="ActividadId" class="form-control" asp-items="ViewBag.ActividadId"></select>
                 <span asp-validation-for="ActividadId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="EmpleadoId" class="control-label"></label>
+                Empleado
                 <select asp-for="EmpleadoId" class="form-control" asp-items="ViewBag.EmpleadoId"></select>
                 <span asp-validation-for="EmpleadoId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ClienteId" class="control-label"></label>
+                Cliente
                 <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
                 <span asp-validation-for="ClienteId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Guardar" class="btn btn-primary" />
             </div>
         </form>
     </div>

@@ -13,33 +13,33 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="DiaEstablecido" class="control-label"></label>
+                Dia Establecido
                 <input asp-for="DiaEstablecido" class="form-control" />
                 <span asp-validation-for="DiaEstablecido" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HInicio" class="control-label"></label>
+                Hora de inicio
                 <input asp-for="HInicio" class="form-control" />
                 <span asp-validation-for="HInicio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SalaId" class="control-label"></label>
+                Sala Asignada
                 <select asp-for="SalaId" class ="form-control" asp-items="ViewBag.SalaId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ActividadId" class="control-label"></label>
+                Numero de Actividad
                 <select asp-for="ActividadId" class ="form-control" asp-items="ViewBag.ActividadId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="EmpleadoId" class="control-label"></label>
+                Numero de Empleado
                 <select asp-for="EmpleadoId" class ="form-control" asp-items="ViewBag.EmpleadoId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ClienteId" class="control-label"></label>
+                Numero de cliente
                 <select asp-for="ClienteId" class ="form-control" asp-items="ViewBag.ClienteId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
